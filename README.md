@@ -1,4 +1,4 @@
-# Assignment 1: Design Your Own Class! 🏗️
+# Week 5 Assignment 1: Design Your Own Class.
 
 ## Table of Contents
 - [Introduction](#introduction)
