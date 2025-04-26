@@ -1,0 +1,51 @@
+# Animal classes
+class Bird:
+    def move(self):
+        print("Flying ✈️")
+
+class Fish:
+    def move(self):
+        print("Swimming 🐠")
+
+class Dog:
+    def move(self):
+        print("Running 🐕")
+
+# Vehicle classes
+class Car:
+    def move(self):
+        print("Driving 🚗")
+
+class Plane:
+    def move(self):
+        print("Flying ✈️")
+
+class Bicycle:
+    def move(self):
+        print("Pedaling 🚲")
+
+# Polymorphic function to demonstrate the move behavior
+def let_it_move(movable):
+    movable.move()
+
+# Example usage
+if __name__ == "__main__":
+    # Create instances of each class
+    sparrow = Bird()
+    goldfish = Fish()
+    bulldog = Dog()
+
+    toyota = Car()
+    boeing = Plane()
+    mountain_bike = Bicycle()
+
+    # Demonstrating polymorphism
+    print("Animals:")
+    let_it_move(sparrow)      # Output: Flying ✈️
+    let_it_move(goldfish)     # Output: Swimming 🐠
+    let_it_move(bulldog)      # Output: Running 🐕
+
+    print("\nVehicles:")
+    let_it_move(toyota)       # Output: Driving 🚗
+    let_it_move(boeing)       # Output: Flying ✈️
+    let_it_move(mountain_bike) # Output: Pedaling 🚲
